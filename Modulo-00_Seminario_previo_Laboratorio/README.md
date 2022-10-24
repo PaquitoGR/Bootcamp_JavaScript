@@ -1,0 +1,1 @@
+## Ejercicios Bootcamp JavaScript - Módulo 0 - Seminario previo
