@@ -1,2 +1,2 @@
 # Bootcamp_JavaScript
-## Ejercicios del bootcamp JavaScript Lemoncode
+## Ejercicios del Bootcamp JavaScript Lemoncode
