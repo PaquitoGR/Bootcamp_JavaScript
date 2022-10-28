@@ -1,0 +1,48 @@
+sbody {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.header > h2 {
+    padding: 20px;
+    text-align: center;
+}
+
+.body {
+    margin: auto;
+    max-width: 50%;
+    display: flex;
+}
+
+.hotel-row {
+    justify-content: space-between;
+    border-radius: 2px;
+    background-color: #dedede;
+    border: 1px solid #9c9c9c;
+    display: flex;
+    margin: 0 -20px;
+    padding: 5px 20px 15px 20px;
+    box-sizing: border-box;
+}
+
+.image {
+    height: 200px;
+    display: flex;
+}
+
+.review-row {
+    padding: 16px;
+    border-radius: 2px;
+    border: 1px solid #9c9c9c;
+    background-color: #dedede;
+    box-sizing: border-box;
+}
+
+.name {
+    font-size: 26px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+}
+
+
