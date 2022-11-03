@@ -6,4 +6,5 @@ js/app.js
 
     · Ejercicio EXTRA - RETENCIONES
         - Retenciones reales y calculadora por trammos - De línea 42 a 77
-        - Retenciones del enunciado, aplicando el mismo porcentaje a todo el sueldo, según cantidad, y descontando un 2% en caso de tener uno o mas hijos - De línea 80 a 106 (COMENTADA)
+        - Retenciones del enunciado, aplicando el mismo porcentaje a todo el sueldo, según cantidad, 
+        y descontando un 2% en caso de tener uno o mas hijos - De línea 80 a 106 (COMENTADA)
