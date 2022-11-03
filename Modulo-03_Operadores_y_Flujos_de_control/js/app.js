@@ -1,4 +1,3 @@
-
 const product = { 
     count: 3,
     price: 12.55,
