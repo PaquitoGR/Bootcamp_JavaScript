@@ -3,7 +3,7 @@
   
   ### Calculadora Secuencial
   
-  #### Carpeta ./Calculadora_secuencial
+  #### > Carpeta ./Calculadora_secuencial
 
 Repite el ejercicio de la calculadora pero esta vez hagamos una calculadora secuencial. Esto es:
 
@@ -25,6 +25,8 @@ Almacenar la operación actual para la siguiente vez.
 NOTA: Gran parte de las funciones que vimos en la calculadora básica podrían servirte aqui también.
 
 ### Reservas en un Hotel
+
+  #### > Carpeta ./Reservas_hotel
 Vamos a simular un formulario de reserva de un hotel. Para ello añade los siguientes inputs a tu HTML:
 
 Selector de tipo de habitación, a elegir entre Standard, Junior Suite y Suite (< select >)
