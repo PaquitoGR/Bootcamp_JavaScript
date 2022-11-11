@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(37, 37, 37);
+    color: rgb(255, 235, 180);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    max-width: 420px;
+    margin: auto;
+}
+
+.equal {
+    width: 100px;
+}
+
+.butt-container {    
+    flex-direction: row;
+    
+}
+
+.result {
+    min-height: 80px;
+    padding: 10px;
+}
