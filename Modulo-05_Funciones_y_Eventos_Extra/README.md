@@ -2,6 +2,9 @@
 
   
   ### Calculadora Secuencial
+  
+  # Carpeta ./Calcuuladora_secuencial
+
 Repite el ejercicio de la calculadora pero esta vez hagamos una calculadora secuencial. Esto es:
 
 Solo es necesario un único campo numérico.
