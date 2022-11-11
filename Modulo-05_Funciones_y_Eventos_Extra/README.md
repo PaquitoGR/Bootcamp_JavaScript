@@ -3,7 +3,7 @@
   
   ### Calculadora Secuencial
   
-  # Carpeta ./Calcuuladora_secuencial
+  #### Carpeta ./Calculadora_secuencial
 
 Repite el ejercicio de la calculadora pero esta vez hagamos una calculadora secuencial. Esto es:
 
