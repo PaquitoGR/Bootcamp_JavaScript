@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <p>Tipo de habitación: 
+        <select name="room-type" id="room-type">
+            <option value="standard" selected>Standard</option>
+            <option value="jubior">Junior Suite</option>
+            <option value="suite">Suite</option>
+        </select>
+    </p>
+    <p>SPA: <input type="checkbox" id="spa-check"></p>
+    <p>Ocupación de la habitación:
+        <select name="room-size" id="room-size">
+            <option value="Individual" selected>Individual</option>
+            <option value="doble">Doble</option>
+            <option value="triple">Triple</option>
+        </select>
+    </p>
+    <p>Número de noches: <input id="room-nights" type="number"></p>
+    <p>Noches de Parking: <input id="park-nights" type="number"></p>
+    <button id="calculate">Calcular</button>
+    <script src="js/app.js"></script>
+</body>
+</html>
