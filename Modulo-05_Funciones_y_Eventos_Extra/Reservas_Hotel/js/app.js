@@ -9,3 +9,44 @@ mientras que el uso triple la incrementa en un 25%. El uso doble
 la deja tal cual.
     Cada noche de parking suma 10€.
 */
+
+var roomType = document.getElementById("room-type");
+var spaCheck = document.getElementById("spa-check");
+var roomSize = document.getElementById("room-size");
+var roomNights = document.getElementById("room-nights");
+var parkNights = document.getElementById("park-nights");
+
+function calculate() {
+    var total = 0;
+    switch (roomType.value) {
+        case "standard":
+            total += 100;
+            break;
+        case "junior":
+            total += 120;
+            break;
+        case "suite": total +=150;
+            break;
+    }
+    console.log(total);
+    total += spaCheck.checked ? 20 : 0;
+    console.log(total);
+    switch (roomSize.value) {
+        case "single":
+            total *= 0.75;
+            break;
+        case "double":
+            break;
+        case "triple":
+            total *= 1.25;
+            break;
+    }
+    console.log(total);
+    total *= roomNights.value;
+    console.log(total);
+    total += 10 * parkNights.value;
+    console.log(total);
+
+    document.getElementById("total").innerHTML = total;
+}
+document.getElementById("calculate").addEventListener("click",calculate);
