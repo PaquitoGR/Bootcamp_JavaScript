@@ -1,10 +1,10 @@
 // Tipo de habitación
 function roomType() {
-    switch (document.getElementById("room-type").value) {
-        case "standard": return 100;            
+    switch (document.getElementById("room-type").value) {           
         case "junior": return 120;
         case "suite": return 150;
     }
+    return 100;     // valor de devolución por defecto (standard)
 }
 
 // Opción Spa
@@ -13,10 +13,10 @@ var spaCheck = () => document.getElementById("spa-check").checked ? 20 : 0;
 // Ocupación de la habitación
 function roomSize() {
     switch (document.getElementById("room-size").value) {
-        case "single": return 0.75;
         case "double": return 1;
         case "triple": return 1.25;
     }
+    return 0.75;    // valor por defecto (single)
 }
 
 // Cálculo del total en base al nº de noches    
@@ -28,9 +28,12 @@ var parkNights = () => 10 * document.getElementById("park-nights").value;
 // Cálculo total e impresión en la página
 function calculate() {
     var total = ((roomType() + spaCheck()) * roomSize()) * roomNights() + parkNights();
-    // Alerta si falta algún campo (total sería NaN)
-    isNaN(total) ? alert("Rellene todos los campos.") : document.getElementById("total").innerHTML = total + " €";
+    document.getElementById("total").innerHTML = total + " €";
 }
 
 // Ejecutar el cálculo al presionar el botón "Calcular"
-document.getElementById("calculate").addEventListener("click",calculate);
+document.getElementById("room-type").addEventListener("input",calculate);
+document.getElementById("spa-check").addEventListener("change",calculate);
+document.getElementById("room-size").addEventListener("input",calculate);
+document.getElementById("room-nights").addEventListener("input",calculate);
+document.getElementById("park-nights").addEventListener("input",calculate);

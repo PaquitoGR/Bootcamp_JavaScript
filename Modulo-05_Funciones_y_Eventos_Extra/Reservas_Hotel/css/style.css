@@ -1,10 +1,21 @@
 body {
-    background-color: rgb(37, 37, 37);
-    color: rgb(255, 235, 180);
+    background-color: rgb(158, 158, 158);    
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 50px;
 }
 
+.container {
+    background-color: rgb(211, 205, 205);
+    color: rgb(40, 39, 35);
+    padding: 10px;
+    max-width: 500px;
+    height: 250px;
+}
+
 label {
     padding: 5px;
+}
+
+.total {
+    text-align: right;
 }
