@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Hotels</title>
+</head>
+<body>
+    <h2>Reservas Hotel - OPCIONAL</h2>
+    <div class="container">
+        <div>
+        <label for="room-type">Tipo de habitación:</label>
+            <select name="room-type" id="room-type">
+                <option disabled selected value>-- seleccione --</option>
+                <option value="standard">Standard</option>
+                <option value="junior">Junior Suite</option>
+                <option value="suite">Suite</option>
+            </select>
+        </div>
+        <div>
+            <label for="spa-check">SPA:</label>
+            <input type="checkbox" id="spa-check">
+        </div>
+        <div>
+        <label for="room-size">Ocupación de la habitación:</label>
+            <select name="room-size" id="room-size">
+                <option disabled selected value>-- seleccione --</option>
+                <option value="single">Individual</option>
+                <option value="double">Doble</option>
+                <option value="triple">Triple</option>
+            </select>    
+        </div>
+        <div>
+            <label for="room-nights">Número de noches:</label>
+            <!-- Valor mínimo y por defecto, una noche -->
+            <input id="room-nights" type="number" value="1" min="1">
+        </div>
+        <div>
+            <label for="park-nights">Noches de Parking:</label>
+            <input id="park-nights" type="number" min="0">
+        </div>
+        <div class="total">
+            <Label for="total"><h3>Total:</h3>
+            <h3 id="total"></h3>          
+        </div>
+    </div>
+    <A href="./index.html">&#8656; Volver a la versión básica</A>
+    <script src="js/app_opcional.js"></script>
+</body>
+</html>
