@@ -9,6 +9,9 @@ Un producto dentro de una línea del carrito de compra contiene la siguiente inf
 - Cantidad
 - Indicador para saber si el producto es premium
 ```
+
+#### Obligatorio:
+
 · Mostrar el carrito de la compra.
 
 · Listar todos los productos.
