@@ -1,4 +1,4 @@
-## Ejercicios Bootcamp JavaScript - Módulo 5 - Funciones y Eventos - Extra
+## Ejercicios Bootcamp JavaScript - Módulo 4 - Funciones y Eventos - Extra
 
   
   ### Calculadora Secuencial
