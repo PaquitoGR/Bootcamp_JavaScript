@@ -1,4 +1,9 @@
 body {
-    background-color: darkslategray;
+    background-color: rgb(47, 64, 79);
     color: cadetblue;
+}
+
+.main-container {
+    width: 300px;
+    text-align: right;
 }

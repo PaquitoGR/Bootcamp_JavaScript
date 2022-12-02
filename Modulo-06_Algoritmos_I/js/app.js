@@ -63,48 +63,30 @@ const products = [
   },
 ];
 
-var numLabel = document.createElement("label");
-var descLabel = document.createElement("label");
-var unitsInput = document.createElement("input");
 
+var printLine = product => {
+  var cartDiv = document.getElementById("cart-container");
+  var productDesc = document.createElement("h5");
+  var productPrice = document.createElement("label");
+  var productUnits = document.createElement("input");
 
-var div = document.getElementById("cart");
-div.appendChild(numLabel);
-div.appendChild(descLabel);
-div.appendChild(unitsInput);
+  productDesc.innerText = product.description;
+  productPrice.innerText = product.price;
 
-var printLine = product => {  
-    descLabel.innerHTML = product.description + " - " + product.price + "€/ud. ";
-    unitsInput.setAttribute("value", " " + product.units);
-    unitsInput.setAttribute("size", 3);
-    unitsInput.setAttribute("max", product.stock);
-    unitsInput.setAttribute("min", 0);  
+  productUnits.setAttribute("type", "number");  
+  productUnits.setAttribute("max", product.stock);
+  productUnits.setAttribute("min", 0);
+  productUnits.setAttribute("value", product.units);
+
+  cartDiv.appendChild(productDesc);
+  cartDiv.appendChild(productPrice);
+  cartDiv.appendChild(productUnits);
 }
 
 var printCart = products => {
-  var prodIndex = 1;
-  for (var product of products) {
-    numLabel.innerHTML = prodIndex + ".";
+  for (product of products) {
     printLine(product);
-    prodIndex ++;
   }
 }
 
 printCart(products);
-
-// for (var product of products) {
-//     var numLabel = document.createElement("label");
-//     numLabel.setAttribute("value", numLabel);
-//     var descLabel = document.createElement("label");
-//     descLabel.setAttribute("value", product.description + "s-");
-//     descLabel.setAttribute("id", "description");
-//     var priceLabel = document.createElement("label");
-//     priceLabel.setAttribute("value", product.price + "€/ud");
-//     var prodUnits = document.createElement("input");
-//     prodUnits.setAttribute("type", "number");
-//     prodUnits.setAttribute("value", product.units);
-//     prodUnits.setAttribute("max", product.stock);
-//     prodUnits.setAttribute("min", 0);
-//     //input.addEventeListener("change", event => console.log(event.target.value));
-// }
-
