@@ -4,6 +4,55 @@ body {
 }
 
 .main-container {
+    margin-left: 25%;
     width: 300px;
     text-align: right;
+}
+
+.totals-container {
+    margin-top: 20px;
+    padding: 10px;
+    border-style: solid;
+    border-color: aliceblue;
+}
+
+.title {
+    text-align: center;
+    color: cornflowerblue;
+}
+
+input[type='number'] {
+    width: 40px;
+}
+
+.button {
+    padding: 15px 25px;
+    font-size: 24px;
+    width: 300px;
+    margin-top: 10px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: cornflowerblue;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    transition: 0.1s;
+  }
+  
+.button:active {
+    background-color: cornflowerblue;
+    box-shadow: 0 5px #666;
+    transform: translateY(3px);
+ }
+
+.button:disabled {
+    background-color: #cccccc;
+    color: #666666;
+    transition: 0.1s;
+}
+
+.product-number {
+    float: left;
 }

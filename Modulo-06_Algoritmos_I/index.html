@@ -8,21 +8,20 @@
     <title>Shopping Cart</title>
 </head>
 <body>
-    <header>
-        <h3>Carrito de la Compra</h3>
-    </header>
     <main>
+
         <div class="main-container" id="main-container">
+            <div class="title"><h3>Carrito de la Compra</h3></div>
             <div class="cart-container" id="cart-container">
                 <!-- JS insert -->
             </div>
-            <div class="button-calculate">
-                <button id="calculate">Calcular</button>
+            <div class="button-calculate-container">
+                <button class="button" id="btn-calculate">Calcular</button>
             </div>
-            <div id="totals-container">
-                <h5 id="subtotal">Subtotal</h5>
-                <h5 id="tax">IVA</h5>
-                <h4 id="total">TOTAL</h4>
+            <div class="totals-container">
+                <h4>Subtotal <label id="subtotal">0.00 €</label></h4>
+                <h5>IVA <label id="taxes">0.00 €</label></h5>
+                <h3>TOTAL <label id="total">0.00 €</label></h3>
             </div>
         </div>
     </main>
