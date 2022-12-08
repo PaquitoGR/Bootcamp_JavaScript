@@ -112,12 +112,10 @@ var printCart = products => {
 var ticket = () => {
     var subtotal = 0;
     var taxes = 0;
-
     for (var product of products) {
         subtotal += (product.price * product.units);
         taxes += product.price * product.units * (product.tax / 100);
     }
-
     return [subtotal, taxes];    
 }
 
