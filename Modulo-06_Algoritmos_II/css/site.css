@@ -1,0 +1,27 @@
+body {
+    background-color: rgb(47, 64, 79);
+    color: cadetblue;
+    text-align: center;
+}
+
+.btns-container {
+    margin: 10px;
+    margin-bottom: 15px;
+}
+
+A {
+    color: cadetblue;
+}
+
+input {
+    width: 40px;
+    margin: 5px 12px 10px;
+}
+
+label {
+    margin: 10px;
+}
+
+.generate-btn {
+    margin: 10px;
+}
