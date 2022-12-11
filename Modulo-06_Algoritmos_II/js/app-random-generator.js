@@ -1,12 +1,24 @@
 
 var randomPick = () => {
-    var num = document.getElementById("num").value;
-    var min = document.getElementById("min").value;
-    var max = document.getElementById("max").value;
+    var num = parseInt(document.getElementById("num").value);
+    var min = parseInt(document.getElementById("min").value);
+    var max = parseInt(document.getElementById("max").value);
+    var array = [];    
     
-    var numRange = Math.floor(Math.random() * (parseInt(max) + 1));
-    console.log(numRange);
-
+    if (max - min + 1 < num) { // Comprobacion: rango mayor que número
+        alert("ERROR!! \nLa cantidad ha de ser mayor o igual a la diferencia entre máximo y mínimo");
+    } else {
+        while (array.length < num) {
+            var randomNumber = getRandom(max, min);        
+            if (array.indexOf(randomNumber) === -1) array.push(randomNumber);   // Control de números repetidos        
+        }
+    }
+    // Muestra el resultado por consola.
+    console.log(array);
 }
 
+// Devuelve un número aleatorio dentro del rango seleccionado.
+var getRandom = (max, min) => min + (Math.floor(Math.random() * ((max - min) + 1)));
+
+// Event Listener para el bottón 
 document.getElementById("generate-btn").addEventListener("click", randomPick);
