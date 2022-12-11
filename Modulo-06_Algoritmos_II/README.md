@@ -2,21 +2,26 @@
 
 ### ENIGMA
 
-#### **Archivos index.html y js/app.js**
+  #### **Archivos index.html y js/app.js**
 Algoritmo de encriptación que cambia cada caracter de una cadena dada pulsando el botón **Encrypt**, según los siguientes modelos:
-**"abcdefghijklmnopqrstuvwxyz:()!¡,'"**
+  >"abcdefghijklmnopqrstuvwxyz:()!¡,'"
+  
 cambia a:
-**"qw,ert(yuio'pa:sdfg!hjklz¡xcv)bnm"**
-y viceversa, usando el botón **Decryp**.
-Se usa una función propia, **indexSeek(str, char)**, para detectar los índices de las ocurrencias de cada caracter en la cadena.
 
-#### Opcional, **Archivos index-opcional.html y js/app-opcional.js**
+  >"qw,ert(yuio'pa:sdfg!hjklz¡xcv)bnm"
+  
+y viceversa, usando el botón *Decryp*.
 
-El mismo algoritmo, pero simplificado, usando el método de arrays **indexOf()** en vez de la función propia **indexSeek(str, char)**.
+Se usa una función propia, *indexSeek(str, char)*, para detectar los índices de las ocurrencias de cada caracter en la cadena.
 
-### Generador Aleatorio
+  #### Opcional, **Archivos index-opcional.html y js/app-opcional.js**
 
-#### **Archivos index-random-generator.html y js/app-random-generator.js**
+El mismo algoritmo, pero simplificado, usando el método de arrays *indexOf()* en vez de la función propia *indexSeek(str, char)*.
 
-Generador aleatorio de cierta cantindadd de números, definida por el campo **Cantidad**, en un rango entre máximo y mínimo, definido por los campos **Mínimo** y **Máximo**.
+
+### GENERADOR ALEATORIO
+
+  #### Archivos **index-random-generator.html** y **js/app-random-generator.js**
+
+Generador aleatorio de cierta cantindadd de números, definida por el campo *Cantidad*, en un rango entre máximo y mínimo, definido por los campos *Mínimo* y *Máximo*.
 
