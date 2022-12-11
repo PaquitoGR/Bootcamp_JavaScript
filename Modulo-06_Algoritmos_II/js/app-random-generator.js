@@ -1,4 +1,4 @@
-
+// Función principal, muestra por consola el array con los numeros aleatorios generados.
 var randomPick = () => {
     var num = parseInt(document.getElementById("num").value);
     var min = parseInt(document.getElementById("min").value);
@@ -13,7 +13,7 @@ var randomPick = () => {
             if (array.indexOf(randomNumber) === -1) array.push(randomNumber);   // Control de números repetidos        
         }
     }
-    // Muestra el resultado por consola.
+    
     console.log(array);
 }
 
