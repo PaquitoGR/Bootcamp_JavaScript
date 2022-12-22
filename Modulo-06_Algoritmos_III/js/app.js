@@ -43,8 +43,8 @@ var squareDiagonalLR = (n, charDiagonal, charUp, charDown) => {
                 rowChar = i > j ? rowChar + charDown : rowChar + charUp;
             }
         }
-        console.log(rowChar);     // El navegador muestra doble barra invertida
-    }                             // si no se imprime toda la linea como un string
+        console.log(rowChar);
+    }
 }
 
 squareDiagonalLR(5, "\\", "A", "B");
@@ -63,7 +63,7 @@ var squareDiagonalRL = (n, charDiagonal, charUp, charDown) => {
                 rowChar = i + j > n - 1 ? rowChar + charDown : rowChar + charUp;
             }
         } 
-        console.log(i, rowChar);
+        console.log(rowChar);
     }
  }
 
@@ -77,7 +77,7 @@ var halfDiamond = (n, char) => {
     var rowChar = "";
     for (var i = 0; i < n * 2 - 1; i++){
         rowChar = i < n ? rowChar + char : rowChar.slice(0, -1);
-        console.log(i, rowChar);
+        console.log(rowChar);
     }
 }
 
@@ -86,33 +86,18 @@ halfDiamond(5, "*");
 
 // Pirámide
 
-// Versión todas las filas tienen la misma longitud. Tras los carácteres dibujados, se rellena con espacios.
-var pyramidA = (n, char) => {
-    console.log("\nPirámide A:")
+var pyramid = (n, char) => {
+    console.log("\nPirámide:")
     for (var i = 0; i < n; i++){
         var rowChar = "";
-        for (var j = 1; j < n * 2; j++){
-            rowChar = j < n - i || j > n + i ? rowChar + " " : rowChar + char;            
+        for (var j = 0; j < n + i; j++){
+            rowChar = j + 1 < n - i ? rowChar + " " : rowChar + char;
         }
-        console.log(i, rowChar);
+        console.log(rowChar);
     }
 }
 
-pyramidA(5, "*");
-
-// Versión cada fila termina donde terminan los caracteres dibujados
-// var pyramidB = (n, char) => {
-//     console.log("\nPirámide B:")
-//     for (var i = 0; i < n; i++){
-//         var rowChar = "";
-//         for (var j = 0; j < n + i; j++){
-//             rowChar = j + 1 < n - i ? rowChar + " " : rowChar + char;            
-//         }
-//         console.log(i, rowChar);
-//     }
-// }
-
-// pyramidB(5, "*");
+pyramid(5, "*");
 
 
 // Diamante
@@ -128,8 +113,9 @@ var diamond = (n, char) => {
                 rowChar = (j < i - n + 1 || j > n * 3 - i - 3) ? rowChar + " " : rowChar + char;
             }
         }
-        console.log(i, rowChar);
+        console.log(rowChar);
     }
 }
 
 diamond(5, "*");
+
