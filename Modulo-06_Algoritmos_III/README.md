@@ -10,7 +10,7 @@
 - También es recomendable que la función admita como argumento(s) el carácter(es) usados para dibujar la figura.
 
 1. Cuadrado
-2. cuadrado con borde
+2. Cuadrado con borde
 3. Cuadrado diagonal left-right
 4. Cuadrado diagonal right-left
 5. Medio diamante
